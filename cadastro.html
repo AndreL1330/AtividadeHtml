@@ -5,56 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
-<body>
+<body id="body">
 
     <style>
 
-        #hx1{
+        #body{
+            background-color: rgb(29, 29, 29);
+            margin: 0;
+        }
+        
+        #topo{
             margin: 0;
             padding: 0;
-            width: 1080px;
             height: 80px;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #texto{
+            margin: 0;
+            width: 500px;
+            position: relative;
+            top: 7px;
+            left: 50px;
             color: white;
             font-size: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        #descricao{
+        #informacao{
+            color: white;
+            font-style: italic;
             font-size: 50px;
             font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             
         }
         
-        #Menu{
-            margin-top: 200px;
+        #menu{
+            margin-top: 30px;
             text-align: center;
             border-color: gray;
         }
 
+        #descricao{
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #formulario{
+            background-color: rgb(218, 218, 218);
+            border-radius: 5px;
+            width: 300px;
+            height: 25px;
+        }
+
+        #enviar{
+            margin-top: 80px;
+            font-size: 30px;
+            border-radius: 15px;
+            background-color: rgb(218, 218, 218);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
     </style>
 
-    <h1 id="hx1">Just do it</h1>
+    <div id="topo">
+        <h1 id="texto">Just do it</h1>
+    </div>
 
-    <div id="Menu">
+    <div id="menu">
 
-        <h1 id="descricao">Cadastro</h1>
+        <h1 id="informacao">Cadastro</h1>
 
         <form action="Cadastro">
         
-            <label for="nome">Nome</label> <br>
-            <input type="text" placeholder="Digite seu Nome" required> <br>
+            <label id="descricao"  for="nome">Nome</label> <br>
+            <input id="formulario" type="text" placeholder="Digite seu Nome" required> <br>
         
-            <label for="email">Email</label> <br>
-            <input type="email" placeholder="Digite seu email" required> <br>
+            <label id="descricao" for="email">Email</label> <br>
+            <input id="formulario" type="email" placeholder="Digite seu email" required> <br>
         
-            <label for="telefone">Telefone</label> <br>
-            <input type="tel" placeholder="Digite seu Telefone" required> <br>
+            <label id="descricao" for="telefone">Telefone</label> <br>
+            <input id="formulario" type="tel" placeholder="Digite seu Telefone" required> <br>
         
-            <label for="endereço">Endereço</label> <br>
-            <input type="text" placeholder="Digite seu Endereço" required> <br>
+            <label id="descricao" for="endereço">Endereço</label> <br>
+            <input id="formulario" type="text" placeholder="Digite seu Endereço" required> <br>
         
-            <input type="submit" placeholder="Cadastrar">
+            <input id="enviar" type="submit" placeholder="Cadastrar">
 
         </form>
     </div>

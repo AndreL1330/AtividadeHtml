@@ -5,26 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
 </head>
-<body>
+<body id="body">
 
     <style>
-        #hx1{
-            color: black;
+
+        #body{
+            background-color: rgb(29, 29, 29);
+            margin: 0;
+        }
+        
+        #topo{
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #texto{
+            margin: 0;
+            width: 500px;
+            position: relative;
+            top: 7px;
+            left: 50px;
+            color: white;
             font-size: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
+        #opcoes{
+            text-align: center;
+
+        }
+        
+        #botoes{
+            margin-top: 120px;
+            font-size: 40px;
+            border-radius: 15px;
+            background-color: rgb(218, 218, 218);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
     </style>
 
-    <h1 id="hx1">Just do it</h1>
+    <div id="topo">
+        <h1 id="texto">Just do it</h1>
+    </div>
     
-    <div> </div>
+    <div id="opcoes"> 
         <a href="cadastro.html">
-            <button>Cadastrar</button>
+            <button id="botoes">Cadastrar</button>
         </a>
         
+        <br>
+        
         <a href="produtos.html">
-            <button>Ver Produtos</button>
+            <button id="botoes">Inserir Produto</button>
         </a>
     </div>
     
